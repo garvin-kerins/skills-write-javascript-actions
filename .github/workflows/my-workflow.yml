@@ -30,6 +30,5 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
-            This issue is available for anyone to work on.
-            **Make sure to reference this issue in your pull request.**
-            :sparkles: Thank you for your contribution! :sparkles:
+            I know you are busy but here is a little joke to make you **smile!**
+            :sparkles: ${{ steps.joke.outputs.joke-output }} :sparkles:
