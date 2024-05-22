@@ -13,11 +13,11 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v3
-      - name: ha-ha
-        id: ha-ha
+      - name: Get a new joke
+        id: joke
         uses: ./.github/actions/joke-action
       - name: Display Joke
-        run: echo "joke is ${{ steps.hi-ha.outputs.joke-output }}"  
+        run: echo "joke is ${{ steps.joke.outputs.joke-output }}"  
       
 
       - name: Add comment
