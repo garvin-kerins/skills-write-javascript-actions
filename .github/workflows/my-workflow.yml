@@ -18,6 +18,9 @@ jobs:
         uses: ./.github/actions/joke-action
       - name: Display Joke
         run: echo "joke is ${{ steps.joke.outputs.joke-output }}"  
+      - name: Print Output
+        id: output
+        run: echo "${{ steps.joke.outputs.joke-output }}"
       
 
       - name: Add comment
